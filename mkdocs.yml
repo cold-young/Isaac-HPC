@@ -1,0 +1,35 @@
+site_name: Isaac-HPC Tutorial
+site_url: https://cold-young.github.io/Isaac-HPC/
+repo_url: https://github.com/cold-young/Isaac-HPC
+edit_uri: edit/main/docs/
+
+theme:
+  name: lantana
+  language: ko 
+  palette:
+    primary: indigo
+    accent: indigo
+
+nav:
+  - Home: index.md
+  - 'Neuron (GPU)':
+    - 'Overview': Neuron_KISTI/README.md
+    - 'Build Environment': Neuron_KISTI/build_your_env.md
+    - 'Job Examples': Neuron_KISTI/Exmaple_schedule.md
+  - 'Nurion (CPU)':
+    - 'Overview': Nurion_KISTI/README.md
+    - 'Overall Guide': Nurion_KISTI/01_HPC_overall_guide.md
+    - 'Job Tutorial': Nurion_KISTI/02_HPC_job_tutorial.md
+    - 'PaScaL_TDMA Env': Nurion_KISTI/03_PaScaL_TDMA_env.md
+    - 'SuperLU Dist': Nurion_KISTI/04_SuperLU_dist.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - arithmatex:  # 수식(LaTeX) 지원을 위해 필요
+      generic: true
