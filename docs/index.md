@@ -8,8 +8,9 @@
 [![NVIDIA](https://img.shields.io/badge/NVIDIA-IsaacSim-nvidia.svg?logo=nvidia)](https://developer.nvidia.com/modulus) 
 <br>
 
-This repository is for tutorial documentations for using NVIDIA Isaac Sim on HPC systems (especially, KISTI's Neuron system). 
-To achieve this, I prove some python scripts to run Isaac Sim/Lab on HPC systems. + [Singularity](https://docs.sylabs.io/guides/2.6/user-guide/index.html)
+This repository contains tutorial documentation on how to use NVIDIA Isaac Sim on HPC systems, particularly KISTI's Neuron system. 
+To this end, I have created some Python scripts to run Isaac Sim/Lab on HPC systems. + [Singularity](https://docs.sylabs.io/guides/2.6/user-guide/index.html)
+
 <br>
 
 **Contributor**: [Chanyoung Ahn](https://github.com/cold-young) 

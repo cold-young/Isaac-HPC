@@ -2,7 +2,7 @@
 
 * contribution: [Chanyoung Ahn](https://cold-young.github.io/)
 
-This document is for using NVIDIA Isaac Sim on HPC systems (especially, KISTI's Neuron system).
+This document outlines how to use NVIDIA Isaac Sim on HPC systems, particularly KISTI's Neuron system.
 
 * Overall Guideline: [Link](https://docs-ksc.gitbook.io/neuron-user-guide-eng/system/user-environment)
 
