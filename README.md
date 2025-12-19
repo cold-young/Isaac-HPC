@@ -15,7 +15,9 @@ To achieve this, I prove some python scripts to run Isaac Sim/Lab on HPC systems
 **Contributor**: [Chanyoung Ahn](https://github.com/cold-young) 
 
 ### TODO 
-- [x] Tutorial for using HPC Nurion.
+- [x] Documentation for using HPC Nurion (CPU).
+- [x] Documentation for using HPC Neuron (GPU).
+- [x] Tutorial for using AI model with multiple GPU w/ Neuron
 - [ ] Tutorial for using Isaac Sim on HPC Neuron.
 - [ ] Tutorial for using Isaac Lab with Singularity for HPC learning.
 
