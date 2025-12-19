@@ -4,11 +4,16 @@ repo_url: https://github.com/cold-young/Isaac-HPC
 edit_uri: edit/main/docs/
 
 theme:
-  name: lantana
-  language: ko 
+  name: material  # material 테마로 변경
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
   palette:
-    primary: indigo
-    accent: indigo
+    - scheme: default
+      primary: indigo
+      accent: indigo
 
 nav:
   - Home: index.md
@@ -31,5 +36,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - arithmatex:  # 수식(LaTeX) 지원을 위해 필요
+  - pymdownx.arithmatex:  # arithmatex 앞에 pymdownx. 를 추가합니다.
       generic: true
+  
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
