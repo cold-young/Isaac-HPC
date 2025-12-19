@@ -22,5 +22,5 @@ jobs:
         run: |
           pip install -r requirements.txt
           
-      - name: Build and Deploy
-        run: mkdocs gh-pages --force
+    - name: Build and Deploy
+        run: mkdocs gh-deploy --force
