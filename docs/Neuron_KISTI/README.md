@@ -5,6 +5,7 @@
 This document outlines how to use NVIDIA Isaac Sim on HPC systems, particularly KISTI's Neuron system.
 
 * Overall Guideline: [Link](https://docs-ksc.gitbook.io/neuron-user-guide-eng/system/user-environment)
+* Neuron system main page: [Link](https://docs-ksc.gitbook.io/neuron-user-guide/undefined/running-jobs-through-scheduler-slurm)
 
 ### Login
 * Use myksc 
@@ -44,7 +45,7 @@ apptainer exec --nv myenv.sif python -c "import torch; print(torch.cuda.is_avail
 * Cannot use in debug node
 ```shell
 salloc --partition=cas_v100_4 --nodes=2 --ntasks-per-node=2 --gres=gpu:2 --comment python
-salloc --partition=ivy_v100_2 -N 2 -n 4 --tasks-per-node=2 --gres=gpu:2 --comment={SBATCH option name} 
+salloc -p amd_a100nv_8 -N 1 --gres=gpu:1 -c 8 --mem=32G -t 02:00:00 --comment pytorch # for learning isaacsim
 # Refer to the Table of SBATCH option name per application 
 
 srun ./(실행파일) (실행옵션)
