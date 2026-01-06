@@ -19,8 +19,8 @@ To this end, I have created some Python scripts to run Isaac Sim/Lab on HPC syst
 - [x] Documentation for using HPC Nurion (CPU).
 - [x] Documentation for using HPC Neuron (GPU).
 - [x] Tutorial for using AI model with multiple GPU w/ Neuron
-- [ ] Tutorial for using Isaac Sim on HPC Neuron.
-- [ ] Tutorial for using Isaac Lab with Singularity for HPC learning.
+- [x] Tutorial for using Isaac Sim on HPC Neuron.
+- [x] Tutorial for using Isaac Lab with Singularity for HPC learning.
 
 ## Sturucture
 ### docs/Nurion_KISTI

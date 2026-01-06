@@ -1,4 +1,6 @@
-# Build own's Environment
+# Build own's Environment (IsaacSim / IsaacLab) in Neuron System
+
+* Caution: Isaacsim only is supported by RTX 
 
 ## Conda
 ```shell
@@ -149,8 +151,8 @@ ls -lh isaac-lab-base_isaacsim5.1.0.sif
 apptainer inspect isaac-lab-base_isaacsim5.1.0.sif | head
 ```
 
-### Test 10 epoch in HPC Neuron system
-- We cannot use `video` option in HPC system...... 
+### Test 10 epoch in HPC Neuron system with Isaac Lab
+- We cannot use `video` option in HPC system...... (only RT core supported -- rtx series)
 ```shell
 singularity exec --nv --containall \
   -B "$ISAACLAB_SRC:/workspace/isaaclab:rw" \

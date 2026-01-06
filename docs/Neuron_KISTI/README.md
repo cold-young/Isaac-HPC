@@ -45,7 +45,8 @@ apptainer exec --nv myenv.sif python -c "import torch; print(torch.cuda.is_avail
 * Cannot use in debug node
 ```shell
 salloc --partition=cas_v100_4 --nodes=2 --ntasks-per-node=2 --gres=gpu:2 --comment python
-salloc -p amd_a100nv_8 -N 1 --gres=gpu:1 -c 8 --mem=32G -t 02:00:00 --comment pytorch # for learning isaacsim
+salloc -p amd_a100nv_8 -N 1 --gres=gpu:1 -c 8 --mem=32G -t 02:00:00 --comment pytorch # for learning isaacsim (slow version)
+salloc -p eme_h200nv_8 -N 1 --gres=gpu:2 -c 16 --mem=32G -t 00:30:00 --comment pytorch
 # Refer to the Table of SBATCH option name per application 
 
 srun ./(실행파일) (실행옵션)
